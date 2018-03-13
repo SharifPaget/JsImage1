@@ -1,1 +1,131 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
 
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+/* THIS LINE LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/* Start your base/mobile styles here */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+.info{
+
+}
+img{
+  image-orientation: middle;
+}
+
+h1{
+  font-family: 'Krona One', sans-serif;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size:
+
+}
+
+
+.image{
+
+}
+
+.hotspot {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.hotspot img{
+  width: 100%;
+}
+.modal{
+  height: 45vh;
+  width: 75vw;
+  position:
+  fixed; top: 200%;
+  right: 12.5%;
+  padding: 1em;
+  background-color: rgba(0,0,0,0.65);
+  transition:
+  top 0.7s ease-in-out;
+  opacity: .90;
+  text-align: center;
+}
+.modal.active{
+  top: 15%;
+}
+
+.modal .inner{
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 1em;
+}
+
+.spot{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #000000;
+  border-color: white;
+}
+#spot1{
+  right: 10%;
+top: 50%;
+background-color: red;
+}
+#spot2{
+  left: 13%;
+top: 41%;
+    background-color: red;
+}
+#spot3{
+  top: 14%;
+  right: 14%;
+  background-color: red;
+
+}
+#spot4{
+  left: 45%;
+top: 41%;
+background-color: red;
+}
+
+#spot5{
+  top: 25%;
+left: 28%;
+    background-color: red;
+}
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+@media(min-width: 729px) {
+  .container{
+    max-width: 745px;
+    display: block;
+    margin: 0 auto;
+  }
